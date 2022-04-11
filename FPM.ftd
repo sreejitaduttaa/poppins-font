@@ -3,6 +3,7 @@
 -- fpm.package: fifthtry.github.io/inter
 zip: github.com/fifthtry/inter/archive/refs/heads/main.zip
 
+-- fpm.dependency: fifthtry.github.io/package-doc
 
 -- fpm.font: Inter
 style: normal
