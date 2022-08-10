@@ -1,17 +1,20 @@
 # Inter Font
 
-`fifthtry.github.io/inter` is a wrapper over [Inter font](https://github.com/rsms/inter).
+[`fifthtry.github.io/inter`](https://fifthtry.github.io/inter) is a wrapper over [Inter font](https://github.com/rsms/inter).
 
 # How To Use This Font
 
-include fifthtry.github.io/inter package into FPM.ftd file
+include fifthtry.github.io/inter package into FPM.ftd file:
+
 ```ftd
 -- fpm.dependency: fifthtry.github.io/inter
 
 -- fpm.auto-import: fifthtry.github.io/inter as inter
+```
 
 Inside your .ftd file to change for any specific token use:
 
+```ftd
 -- fpm.type.headline-small.font: $inter.fonts.Inter
 
 -- ftd.text:
