@@ -2,7 +2,7 @@
 
 [`fifthtry.github.io/inter`](https://fifthtry.github.io/inter) is a wrapper over [Inter font](https://github.com/rsms/inter).
 
-# [How To Use This Font] (https://fpm.dev/how-to/custom-fonts/).
+[How To Use This Font] (https://fpm.dev/how-to/custom-fonts/).
 
 # License
 
