@@ -6,22 +6,7 @@
 
 include fifthtry.github.io/inter package into FPM.ftd file:
 
-```ftd
--- fpm.dependency: fifthtry.github.io/inter
-
--- fpm.auto-import: fifthtry.github.io/inter as inter
-```
-
-Inside your .ftd file to change for any specific token use:
-
-```ftd
--- fpm.type.headline-small.font: $inter.fonts.Inter
-
--- ftd.text:
-role: $fpm.type.headline-small
-```
-
-[How to Use Fonts](https://fpm.dev/how-to/how-to-use-fonts/).
+[How to Use Fonts](https://fpm.dev/how-to/custom-fonts/).
 
 # License
 
