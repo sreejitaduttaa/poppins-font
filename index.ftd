@@ -1,4 +1,6 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/typography as tf
+-- import: fifthtry.github.io/inter/assets as inter-assets
 -- import: fpm
 
 
@@ -7,12 +9,37 @@
 -- is-mobile: true
 if: $ftd.device == mobile
 
+
+-- ftd.font-size inter-demo:
+line-height: 36
+size: 22
+letter-spacing: 0
+
+-- ftd.font-size inter-demo-heading:
+line-height: 56
+size: 48
+letter-spacing: 0
+
+-- ftd.type inter-font: $inter-assets.fonts.Inter
+desktop: $inter-demo
+mobile: $inter-demo
+xl: $inter-demo
+weight: 400
+
+-- ftd.type inter-font-heading: $inter-assets.fonts.Inter
+desktop: $inter-demo-heading
+mobile: $inter-demo-heading
+xl: $inter-demo-heading
+weight: 400
+
+
+
 -- ftd.column:
 width: fill
 padding-horizontal: 50
 padding-horizontal if $is-mobile: 20
 background-color: $fpm.color.main.background.base
-height: fill
+id: parent
 
 
 -- pd.package: Inter - fpm font
@@ -32,9 +59,9 @@ This component consist of Inter font with all it's styles from Thin-100 to Black
 
 include fifthtry.github.io/inter package into FPM.ftd file
 
-\-- fpm.dependency: fifthtry.github.io/inter
+\-- fpm.dependency: fifthtry.github.io/inter/assets as inter
 
-\-- fpm.auto-import: fifthtry.github.io/inter as inter
+\-- fpm.auto-import: inter
 
 Inside your .ftd file to change for any specific token use:
 
@@ -44,3 +71,108 @@ Inside your .ftd file to change for any specific token use:
 role: $fpm.type.headline-small
 
 
+-- container: parent
+
+-- tf.h2: `inter-font` hairline 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: hairline
+
+-- tf.h2: `inter-font` extra-light 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: extra-light
+
+-- tf.h2: `inter-font` light 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: light
+
+-- tf.h2: `inter-font` regular 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: regular
+
+-- tf.h2: `inter-font` regular strike through 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: regular strike
+
+-- tf.h2: `inter-font` regular underline 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: regular underline
+
+-- tf.h2: `inter-font` regular italic 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: regular italic
+
+-- tf.h2: `inter-font` medium 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: medium
+
+-- tf.h2: `inter-font` semi-bold 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: semi-bold
+
+-- tf.h2: `inter-font` bold 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: bold
+
+-- tf.h2: `inter-font` extra-bold 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: extra-bold
+
+-- tf.h2: `inter-font` heavy 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-6
+style: heavy
+
+-- tf.h2: `inter-font` heading regular 48px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $inter-font-heading
+color: $fpm.color.main.text-strong
+margin-bottom: $fpm.space.space-10
+style: regular
