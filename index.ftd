@@ -1,7 +1,7 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
 -- import: fifthtry.github.io/package-doc/typography as tf
 -- import: fifthtry.github.io/inter/assets as inter-assets
--- import: fpm
+-- import: fastn
 
 
 
@@ -40,13 +40,13 @@ padding-horizontal.px if {ftd.device == "mobile"}: 20
 background.solid: $inherited.colors.background.base
 
 
--- pd.package: Inter - fpm font
+-- pd.package: Inter - fastn font
 name: fifthtry.github.io/inter
 
 This component consist of Inter font with all it's styles from Thin-100 to Black-900.
 
 
--- pd.component: Inter - fpm font
+-- pd.component: Inter - fastn font
 name: https://github.com/FifthTry/inter
 
 This component consist of Inter font with all it's styles from Thin-100 to Black-900.
@@ -55,18 +55,18 @@ This component consist of Inter font with all it's styles from Thin-100 to Black
 
 -- pd.hidden-code: How to use
 
-include fifthtry.github.io/inter package into FPM.ftd file
+include fifthtry.github.io/inter package into FASTN.ftd file
 
-\-- fpm.dependency: fifthtry.github.io/inter/assets as inter
+\-- fastn.dependency: fifthtry.github.io/inter/assets as inter
 
-\-- fpm.auto-import: inter
+\-- fastn.auto-import: inter
 
 Inside your .ftd file to change for any specific token use:
 
-\-- fpm.type.headline-small.font: $inter.fonts.Inter
+\-- fastn.type.headline-small.font: $inter.fonts.Inter
 
 \-- ftd.text:
-role: $fpm.type.headline-small
+role: $fastn.type.headline-small
 
 
 -- tf.h2: `inter-font` hairline 18px:
