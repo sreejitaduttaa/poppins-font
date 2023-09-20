@@ -1,4 +1,4 @@
-# Inter : FPM Font Package
+# Poppins : FPM Font Package
 
 This repository contains a [fpm font package](https://fpm.dev/featured/fonts/) containing [Google Font: 
 Inter](https://fonts.google.com/specimen/Inter/about).
@@ -13,22 +13,22 @@ Designers: Rasmus Andersson, Principal design
 
 ## How To Use This Font In Your FPM Package:
 
-[Read the docs and demo](https://fifthtry.github.io/inter).
+[Read the docs and demo](https://sreejitaduttaa.github.io/poppins-font/).
 
 TLRD:
 
-Include fifthtry.github.io/inter package into `FPM.ftd` file:
+Include sreejitaduttaa.github.io/poppins-font package into `FPM.ftd` file:
 
 ```ftd
-;-- fpm.dependency: fifthtry.github.io/inter
+;-- fpm.dependency: sreejitaduttaa.github.io/poppins-font
 ```
 
 Inside your `FPM/config.ftd` use the font:
 
 ```ftd
-;-- import: fifthtry.github.io/inter/assets as inter
+;-- import: sreejitaduttaa.github.io/poppins-font/assets as poppins
 
-;-- fpm.type.headline-small: $inter.fonts.Inter
+;-- fpm.type.headline-small: $poppins.fonts.Poppins
 ```
 
 Now if in any file you do:
@@ -38,7 +38,7 @@ Now if in any file you do:
 role: $fpm.type.headline-small
 ```
 
-You will see the `inter` font.
+You will see the `Poppins` font.
 
 ## 👀 Want to learn more?
 
