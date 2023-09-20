@@ -1,0 +1,171 @@
+-- import: fifthtry.github.io/package-doc/doc as pd
+-- import: fifthtry.github.io/package-doc/typography as tf
+-- import: sreejitaduttaa.github.io/poppins-font/assets as poppins-assets
+-- import: fastn
+
+-- ftd.type poppins-demo:
+size.px: 22
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+line-height.px: 36
+letter-spacing.px: 0
+
+
+-- ftd.type poppins-demo-heading:
+size.px: 48
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+line-height.px: 56
+letter-spacing.px: 0
+
+-- ftd.responsive-type small-heading:
+desktop: $poppins-demo
+mobile: $poppins-demo
+
+-- ftd.responsive-type large-heading:
+desktop: $poppins-demo-heading
+mobile: $poppins-demo-heading
+
+
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 50
+padding-horizontal.px if {ftd.device == "mobile"}: 20
+background.solid: $inherited.colors.background.base
+
+
+-- pd.package: Poppins - fastn font
+name: sreejitaduttaa.github.io/poppins-font
+
+This component consist of Poppins font with all it's styles from Thin-100 to Black-900.
+
+
+-- pd.component: Poppins - fastn font
+name: https://github.com/sreejitaduttaa/poppins-font
+
+This component consist of Poppins font with all it's styles from Thin-100 to Black-900.
+
+
+
+-- pd.hidden-code: How to use
+
+include sreejitaduttaa.github.io/poppins-font package into FASTN.ftd file
+
+\-- fastn.dependency: fifthtry.github.io/poppins-font/assets as poppins
+
+\-- fastn.auto-import: poppins
+
+Inside your .ftd file to change for any specific token use:
+
+\-- fastn.type.headline-small.font: $inter.fonts.Poppins
+
+\-- ftd.text:
+role: $fastn.type.headline-small
+
+
+-- tf.h2: `poppins-font` hairline 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: hairline
+
+-- tf.h2: `poppins-font` extra-light 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: extra-light
+
+-- tf.h2: `poppins-font` light 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: light
+
+-- tf.h2: `poppins-font` regular 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.  
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: regular
+
+-- tf.h2: `poppins-font` regular strike through 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: regular strike
+
+-- tf.h2: `poppins-font` regular underline 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: regular underline
+
+-- tf.h2: `poppins-font` regular italic 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: regular italic
+
+-- tf.h2: `poppins-font` medium 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: medium
+
+-- tf.h2: `poppins-font` semi-bold 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: semi-bold
+
+-- tf.h2: `poppins-font` bold 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: bold
+
+-- tf.h2: `poppins-font` extra-bold 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: extra-bold
+
+-- tf.h2: `poppins-font` heavy 18px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $small-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 24
+;; style: heavy
+
+-- tf.h2: `poppins-font` heading regular 48px:
+
+-- ftd.text: Todos os seres humanos nascem livres e iguais em dignidade.
+role: $large-heading
+color: $inherited.colors.text-strong
+margin-bottom.px: 40
+;; style: regular
+
+-- end: ftd.column
